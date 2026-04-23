@@ -52,8 +52,8 @@ body.high-contrast a, body.high-contrast button {
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(10px);
+    background: white;
+    
 }
 .nav-container { display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 900; letter-spacing: -1px; }
