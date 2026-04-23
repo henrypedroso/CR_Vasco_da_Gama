@@ -72,7 +72,7 @@ body.high-contrast a, body.high-contrast button {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Opcional: efeito parallax */
+    /*background-attachment: fixed; /* Opcional: efeito parallax */
     color: white;
     padding: 0 5%;
 }
