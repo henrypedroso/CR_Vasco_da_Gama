@@ -58,6 +58,11 @@ body.high-contrast a, body.high-contrast button {
 .nav-container { display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 900; letter-spacing: -1px; }
 
+.logo img{
+    height: 50px;
+    width: auto;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
