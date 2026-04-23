@@ -68,11 +68,11 @@ body.high-contrast a, body.high-contrast button {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('/img/roberto_dinaminte_jpg.jpg');
+    background-image: url('/img/roberto_dinaminte_jpg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /*background-attachment: fixed; /* Opcional: efeito parallax */
+    background-attachment: fixed; 
     color: white;
     padding: 0 5%;
 }
