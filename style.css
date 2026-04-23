@@ -1,0 +1,116 @@
+:root {
+    /* Cores e Identidade */
+    --primary: #000000;
+    --secondary: #e21c23; /* Vermelho Cruz de Malta */
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+    --bg-light: #f4f4f4;
+    
+    /* Design System */
+    --radius: 16px;
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    
+    /* Tipografia Fluida */
+    --font-base: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-base);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--text-light);
+    overflow-x: hidden;
+}
+
+/* BLINDAGEM MODO CONTRASTE */
+body.high-contrast, body.high-contrast *:not(i):not(.icon) {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #ff0 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+body.high-contrast a, body.high-contrast button {
+    color: #ff0 !important;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}
+
+/* Layout */
+.section-padding { padding: clamp(4rem, 10vh, 8rem) 5%; }
+.container { max-width: 1200px; margin: 0 auto; }
+
+/* Header & Nav */
+.header {
+    padding: 1.5rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+}
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 900; letter-spacing: -1px; }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #000 0%, #333 100%);
+    color: white;
+    padding: 0 5%;
+}
+.hero-content { max-width: 800px; }
+h1 { font-size: clamp(2.5rem, 8vw, 5rem); line-height: 1.1; margin: 1.5rem 0; font-weight: 900; }
+.text-gradient { color: var(--secondary); }
+
+/* Componentes Dinâmicos */
+.carousel { display: flex; gap: 2rem; overflow-x: auto; padding: 2rem 0; scroll-behavior: smooth; }
+.card {
+    min-width: 300px;
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+.accordion-header {
+    background: var(--primary);
+    color: white;
+    padding: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.accordion-content {
+    padding: 0;
+    max-height: 0;
+    transition: var(--transition);
+    background: white;
+}
+.accordion-item.active .accordion-content { padding: 1.5rem; max-height: 500px; }
+
+/* Botões */
+.cta-button {
+    background: var(--secondary);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+    display: inline-block;
+}
+.cta-button:hover { transform: translateY(-5px); filter: brightness(1.2); }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasco da Gama | O Gigante da Colina</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">VASCO</div>
+            <div class="accessibility-controls">
+                <button onclick="changeFontSize(1)" aria-label="Aumentar fonte">A+</button>
+                <button onclick="changeFontSize(-1)" aria-label="Diminuir fonte">A-</button>
+                <button id="contrast-toggle" aria-label="Alternar Alto Contraste">◐</button>
+            </div>
+            <a href="#adesao" class="cta-button mini">Seja Sócio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="badge">Desde 1898</span>
+                <h1>A História <br><span class="text-gradient">Escrita por Nós.</span></h1>
+                <p>Mais que um clube, um manifesto de resistência e glória. Junte-se ao Gigante da Colina e faça parte dessa trajetória imortal.</p>
+                <div class="hero-btns">
+                    <a href="#adesao" class="cta-button">Associe-se Agora</a>
+                    <a href="#historia" class="btn-secondary">Conheça a História</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="conquistas">
+            <h2 class="section-title">Nossas Glórias</h2>
+            <div id="carousel-container" class="carousel">
+                </div>
+        </section>
+
+        <section class="section-padding bg-light" id="adesao">
+            <div class="container">
+                <h2 class="section-title">Planos Gigante</h2>
+                <div id="plans-accordion" class="accordion">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Clube de Regatas Vasco da Gama. Sem fins lucrativos. Desenvolvido para torcedores.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
